@@ -42,7 +42,7 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: Use Gradle 6.5 via wrapper
-      run: ./gradlew wrapper --gradle-version 6.5
+      run: ./gradlew wrapper --gradle-version 6.5 --stacktrace
 
     - name: Build Debug APK
       run: ./gradlew assembleDebug
